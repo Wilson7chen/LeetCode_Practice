@@ -7,12 +7,8 @@ public class Valid_Sudoku_36 {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
                 if (board[i][j] != '.') {
-                    if(set.contains("r" + i + board[i][j]) || set.contains("c" + j + board[i][j]) || set.contains("b" + ((i / 3) * 3 + j / 3) + board[i][j])) {
+                    if(!set.add("r" + i + board[i][j]) || !set.add("c" + j + board[i][j]) || !set.add("b" + ((i / 3) * 3 + j / 3) + board[i][j])) {
                         return false;
-                    } else {
-                        set.add("r" + i + board[i][j]);
-                        set.add("c" + j + board[i][j]);
-                        set.add("b" + ((i / 3) * 3 + j / 3) + board[i][j]);
                     }
                 }
             }
