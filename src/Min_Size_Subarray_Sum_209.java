@@ -1,7 +1,3 @@
-import com.sun.tools.javac.Main;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Min_Size_Subarray_Sum_209 {
     public static int minSubArrayLen(int target, int[] nums) {
         int result = Integer.MAX_VALUE;
